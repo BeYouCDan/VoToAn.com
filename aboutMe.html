@@ -1,0 +1,135 @@
+<html>
+    <head>
+
+        <title>
+        VoToAn      
+        </title>
+        <link rel="stylesheet" href="websiteStyle.css">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="//cdn.WebRTC-Experiment.com/Translator.js"></script>
+<script type="text/javascript" src="mainAction.js"></script>
+
+    </head>
+    <style>
+        body{
+            padding-top: 100px;
+        }
+    </style>
+
+    <body>
+     <nav class = "navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+            <!--make some background color changes!!-->
+            <div class="container">
+                <div class ="nav-header">
+                    <div class="container">
+                        <h1 style="color:white">     VoToAn   <a href="" class="btn btn-info navbar-btn navbar-right btn-warning">Created By</a> </h1>
+                        <p style="color:white">Create images, Move them, and Alter "emotions" of images using your voice</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+            <section>
+                <div class="carousel slide" id="instruction-carousel" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-target="#instruction-carousel" data-slide-to="0"></li>
+                        <li data-target="#instruction-carousel" data-slide-to="1"></li>
+                        <li data-target="#instruction-carousel" data-slide-to="2"></li>
+                        <li data-target="#instruction-carousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="create.jpg" alt="Text of the image">
+                            <div class="carousel-caption" style="color: white">
+                                <h1><span id="inCreate">Instructions</h1>
+                                <h2><span id="inCreate">How to create image person</h2>
+                        <p> <span id="inCreate">first make sure that your Microphone is Allowed
+                        </p>
+                        <p><span id="inCreate">
+                            - Say: "new person" + the name of the person that you want to create.    
+                        </p>
+                        <p><span id="inCreate">
+                            i.e "new person Daniel"
+                        </p>
+                        <p><span id="inCreate">
+                            - When you call the person correctly, google image search will open as a pop up(enable pop-ups)
+                        </p>
+
+                        <p> <span id="inCreate">*<b>DO NOT</b> copy and paste the address of the <b>EXPANDED</b> image(Expanded image is an image that is enlarged when you click the photo). The program does not work with those images. Just Use the <b>NON-expanded</b> version from the google image search.
+                        </p>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <img src="action.jpg" alt="Text of the image">
+                            <div class="carousel-caption" style="color: black">
+                                 <h1><span id="inAction">Actions</span></h1>
+                        <p><span id="inAction">
+                            - There are 4 <b>directions</b> that the image can move to: left, right, up and down.
+                            </span>
+                        </p>
+                        <p><span id="inAction">
+                            - To make the image move, say out loud: The name of person that you made + " shift " + the <b>directions</b>.
+                            i.e "Daniel shift right"
+                        </p>
+                        <p><span id="inAction">
+                            - To make the image move faster say: The name of person + " run " + <b>directions</b>
+                        </p>
+                        <p><span id="inAction">
+                            - To stop the image while moving say: The name of the person + " stop "
+                        </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="emotion.jpg" alt="Text of the image">
+                            <div class="carousel-caption">
+                               <h2>Emotions</h2>
+                        <p>
+                            - There are 6 <b>emotions</b> that the image can have: Angry, Happy, Sad, Tender, Excited, and Scared
+                        </p>
+                        <p>
+                            - To depict image emotions say: The name of the person + "is" + the state of <b>emotions</b>.
+                        </p>
+                        <p>
+                            i.e "Daniel is angry"
+                        </p>
+                        <p>
+                            - To turn the image back to itself click on the image. 
+                        </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="extra-info.jpg" alt="Text of the image">
+                            <div class="carousel-caption">
+                                 <h2>Some more info</h2>
+                        <p>
+                            - You can create more than one Image by calling "new person". 
+                        </p>
+                        <p> You can't create another person with the same name.</p>
+                        <p>
+                            i.e "new person Daniel" and then calling "new person Daniel" will not create a second Daniel
+                        </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#instruction-carousel" class="left carousel-control" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a href="#instruction-carousel" class="right carousel-control" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+
+                        
+                </div>
+            </section>
+       
+        <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
